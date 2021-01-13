@@ -1,22 +1,25 @@
 <template>
   <div class="home">
     <v-container fluid>
-    <v-row :align="center" :justify="center">
-      <v-col>
-        <v-row
-          :justify="center"
-          :align="center"
-        >
-        <!-- <v-col cols="6" md="2"> -->
-          <v-card class="ma-3 pa-6">
-          <v-card-text>
-          <strong><i><h1 class="text-center"> Website Coming Soon </h1></i></strong>
-          </v-card-text>
+      <v-row align="center" justify="center">
+        <v-col>
+          <v-card class="ma-3 pa-6" align="center" justify="center">
+            <v-card-text class="justify-center">
+              <h1 style="color: black;">
+                <strong><em>Welcome to Kawal's Website</em></strong>
+              </h1>
+            </v-card-text>
+            <v-card-text class="justify-center">
+              <h3>
+                <strong><em>This website is currently still in development. Experience Section is now available. Styling and Mobile Layout to come.</em></strong>
+              </h3>
+              <h4>
+                <strong><em>&#126; Jan. 14, 2021 &#126;</em></strong>
+              </h4>
+            </v-card-text>
           </v-card>
-          <!-- </v-col> -->
-        </v-row>
-    </v-col>
-    </v-row>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
@@ -27,6 +30,6 @@
 
 export default {
   name: "Home",
-  components: {}
+  components: {},
 };
 </script>

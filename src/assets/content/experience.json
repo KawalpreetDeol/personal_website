@@ -1,0 +1,43 @@
+{
+    "decription_types": ["list", "paragraph"],
+    "jobs": [
+        {
+            "company": "Horizn Studios",
+            "job_title": "Web Developer",
+            "start": "Sept. 2020",
+            "end": "Dec. 2020",
+            "description_format": "list",
+            "description": [
+                "Updated features to follow Accessibility Guidelines, such as breadcrumbs, bypass blocks, and ARIA Labels",
+                "Developed features and implemented bug fixes with React.js and Laravel for modules to be used by banks like RBC, BMO and NationWide",
+                "Configured site routing, created backend models, migrations, seeders,  data and site controllers, and a React front-end to add a new webpage that displays specific data from a MySQL database and images from AWS"
+            ]
+        },
+        {
+            "company": "Venngo Inc.",
+            "job_title": "PHP Developer",
+            "start": "Jan. 2020",
+            "end": "Apr. 2020",
+            "description_format": "list",
+            "description": [
+                "Utilized the MVC Architecture using Typescript and Vue.js, Laravel and MySQL to develop code on a local Vagrant box and used Git to push local code to sprint branches that were planned using JIRA",
+                "Reengineered an older website from PHP to Vue.js and Laravel that involved communicating with the Shopify API to retrieve orders and change them to shipped, converting html invoices from PHP blade templates to PDF, and sending an email with the PDF",
+                "Assisted with the development of a module where merchants can view graphs based on their statistical data by date range, view their account information and create modification requests for their perks with the ability to upload design images to AWS",
+                "Integrated Position Stack Geocoding API with existing Google Geocoding API using circuit breaker methodology"
+            ]
+        },
+        {
+            "company": "Toronto Water",
+            "job_title": "IT Technical Trainee",
+            "start": "May 2019",
+            "end": "Aug. 2019",
+            "description_format": "list",
+            "description": [
+                "Planned, managed, and implemented changes to websites using HTML/CSS, JS, jQuery, PHP, and PowerShell on a Windows 2012 R2 VM Server with IIS and MySQL to realize functional requirements, such as IP Address and Host Name tracking as well as submitting and retrieving data to/from MySQL",
+                "Utilized Google Scripts with Google Sheets API to develop a query webpage interface to retrieve data from a spreadsheet",
+                "Configured network devices, such as routers and switches using the cisco command-line interface",
+                "Participated in a Datacenter Move, moving switches from one location to another and patching switches between racks"
+            ]
+        }
+    ]
+}
