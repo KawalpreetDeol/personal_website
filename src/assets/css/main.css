@@ -1,0 +1,7 @@
+html, body {
+    overflow: hidden !important;
+}
+
+.vertical_scrolling {
+    overflow-y: auto !important;
+}

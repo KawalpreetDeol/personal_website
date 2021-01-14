@@ -1,3 +1,4 @@
+<style rel="stylesheet" href="@/assets/css/main.css"></style>
 <template>
   <div id="app1" class="indigo lighten-1 white--text">
     <v-card>
@@ -25,6 +26,7 @@
       </v-tabs>
     </v-card>
     <v-divider></v-divider>
+
     <router-view></router-view>
 
     <v-footer dark padless absolute style="width: 100%; bottom: 0;">
@@ -58,13 +60,15 @@
 </template>
 
 <script>
+import { mdiGithub } from '@mdi/js';
+
 export default {
   data: () => ({
     socialMedia: [
       {name:"facebook", icon:"mdi-facebook", link:'https://ca.linkedin.com/in/kawalpreetdeol'},
       {name:"twitter", icon:"mdi-twitter",link:'https://ca.linkedin.com/in/kawalpreetdeol'},
-      // {name:"google plus", icon:"mdi-google-plus", link:'https://ca.linkedin.com/in/kawalpreetdeol'},
-      {name:"linkedin", icon : "mdi-linkedin", link:'https://ca.linkedin.com/in/kawalpreetdeol'},
+      {name:"github", icon: mdiGithub, link:'https://github.com/KawalpreetDeol'},
+      {name:"linkedin", icon :"mdi-linkedin", link:'https://ca.linkedin.com/in/kawalpreetdeol'},
       {name:"instagram", icon:"mdi-instagram",link:'https://ca.linkedin.com/in/kawalpreetdeol'},
     ]
   })

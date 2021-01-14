@@ -1,5 +1,5 @@
 <template>
-  <div class="experience">
+  <div class="experience vertical_scrolling">
     <v-container fluid>
       <v-row v-for="(exp, index) in expList" align="center" :key="'exp' + index">
         <v-col>
