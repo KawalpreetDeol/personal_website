@@ -1,4 +1,3 @@
-<style rel="stylesheet" href="@/assets/css/main.css"></style>
 <template>
   <div id="app1" class="indigo lighten-1 white--text">
     <v-card>
@@ -61,6 +60,7 @@
 
 <script>
 import { mdiGithub } from '@mdi/js';
+import '@/assets/css/main.css';
 
 export default {
   data: () => ({

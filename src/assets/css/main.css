@@ -1,5 +1,8 @@
-html, body {
-    overflow: hidden !important;
+html, body, .app1 {
+    overflow: hidden;
+}
+.app1 {
+    position: relative;
 }
 
 .vertical_scrolling {
