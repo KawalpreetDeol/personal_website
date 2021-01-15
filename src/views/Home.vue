@@ -11,7 +11,7 @@
             </v-card-text>
             <v-card-text class="justify-center">
               <h3>
-                <strong><em>This website is currently still in development. Experience Section is now available. Styling and Mobile Layout to come.</em></strong>
+                <strong><em>This website is currently still in development. Experience and Projects Sections are now available. Styling and Mobile Layout to come.</em></strong>
               </h3>
               <h4>
                 <strong><em>&#126; Jan. 14, 2021 &#126;</em></strong>

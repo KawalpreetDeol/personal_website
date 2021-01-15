@@ -1,66 +1,83 @@
 <template>
   <div id="app1" class="indigo lighten-1 white--text">
-    <v-card>
-      <v-tabs v-model="tab" background-color="indigo lighten-1 accent-4" centered icons-and-text>
-        <v-tabs-slider></v-tabs-slider>
-        <v-tab to="/" href="#tab-1">
-          Home
-          <v-icon>mdi-home</v-icon>
-        </v-tab>
+    <div class="nav_container">
+      <v-card>
+        <v-tabs v-model="tab" background-color="indigo lighten-1 accent-4" centered icons-and-text>
+          <v-tabs-slider></v-tabs-slider>
+          <v-tab to="/" href="#tab-1">
+            Home
+            <v-icon>mdi-home</v-icon>
+          </v-tab>
 
-        <v-tab to="/about" href="#tab-2">
-          Bio
-          <v-icon>mdi-account-box</v-icon>
-        </v-tab>
+          <v-tab to="/about" href="#tab-2">
+            Bio
+            <v-icon>mdi-account-box</v-icon>
+          </v-tab>
 
-        <v-tab to="/projects" href="#tab-3">
-          Projects
-          <v-icon>mdi-electron-framework</v-icon>
-        </v-tab>
+          <v-tab to="/projects" href="#tab-3">
+            Projects
+            <v-icon>mdi-electron-framework</v-icon>
+          </v-tab>
 
-        <v-tab to="/experience" href="#tab-3">
-          Experience
-          <v-icon>mdi-briefcase</v-icon>
-        </v-tab>
-      </v-tabs>
-    </v-card>
-    <v-divider></v-divider>
-
-    <router-view></router-view>
-
-    <v-footer dark padless absolute style="width: 100%; bottom: 0;">
-        <v-container fluid grid-list-xl text-xs-center>
-            <v-flex xs10 offset-xs1>
-              <v-card class="indigo lighten-1 white--text text-center">
-                <v-card-text>
-                  <v-layout justify-center>
-                    <template v-for="(media,index) in socialMedia">
-                    <v-flex xs10 offset-xs1 :key='"flex_" + index'>
-                    <v-btn :key="media + index" :href="media.link" class="mx-4">
-                      <v-icon size="24px" >{{ media.icon }}</v-icon>
-                    </v-btn>
-                    </v-flex>
-                    </template>
-                  </v-layout>
-                </v-card-text>
-                
-                <v-divider></v-divider>
-                <v-layout row align-center justify-center class="text-center">
-                  <v-card-text class="white--text text-center">
-                    <Strong>This website is owned and operated by Kawalpreet Deol &copy; {{ new Date().getFullYear() }}</strong>
+          <v-tab to="/experience" href="#tab-3">
+            Experience
+            <v-icon>mdi-briefcase</v-icon>
+          </v-tab>
+        </v-tabs>
+      </v-card>
+      <v-divider></v-divider>
+    </div>
+    <div class="content_container">
+      <router-view></router-view>
+    </div>
+    <div>
+      <v-footer class="footer_container" dark padless absolute style="width: 100%; bottom: 0;">
+          <v-container fluid grid-list-xl text-xs-center>
+              <v-flex xs10 offset-xs1>
+                <v-card class="indigo lighten-1 white--text text-center">
+                  <v-card-text>
+                    <v-layout justify-center>
+                      <template v-for="(media,index) in socialMedia">
+                      <v-flex xs10 offset-xs1 :key='"flex_" + index'>
+                      <v-btn :key="media + index" :href="media.link" class="mx-4">
+                        <v-icon size="24px" >{{ media.icon }}</v-icon>
+                      </v-btn>
+                      </v-flex>
+                      </template>
+                    </v-layout>
                   </v-card-text>
-                </v-layout>
-              </v-card>
-            </v-flex>
-          
-        </v-container>
-    </v-footer>
+                  
+                  <v-divider></v-divider>
+                  <v-layout row align-center justify-center class="text-center">
+                    <v-card-text class="white--text text-center">
+                      <Strong>This website is owned and operated by Kawalpreet Deol &copy; {{ new Date().getFullYear() }}</strong>
+                    </v-card-text>
+                  </v-layout>
+                </v-card>
+              </v-flex>
+            
+          </v-container>
+      </v-footer>
+    </div>
   </div>
 </template>
 
 <script>
 import { mdiGithub } from '@mdi/js';
 import '@/assets/css/main.css';
+import $ from 'jquery';
+
+$(document).ready(function (){
+  let maxHeight = 0;
+  maxHeight = $(window).height() - ($(".nav_container").height() + $(".footer_container").height());
+  $( ".content_container .container_max_height" ).css({"maxHeight": maxHeight});
+});
+
+$( window ).resize(function (){
+  let maxHeight = 0;
+  maxHeight = $(window).height() - ($(".nav_container").height() + $(".footer_container").height());
+  $( ".content_container .container_max_height" ).css({"maxHeight": maxHeight});
+});
 
 export default {
   data: () => ({

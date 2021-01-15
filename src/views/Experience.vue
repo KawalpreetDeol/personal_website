@@ -1,6 +1,6 @@
 <template>
-  <div class="experience vertical_scrolling">
-    <v-container fluid>
+  <div class="experience vertical_scrolling container_max_height">
+    <v-container fluid class="container_max_height">
       <v-row v-for="(exp, index) in expList" align="center" :key="'exp' + index">
         <v-col>
           <v-card class="ma-3 pa-6">
