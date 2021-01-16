@@ -1,0 +1,19 @@
+{
+    "decription_types": [
+        "list",
+        "paragraph"
+    ],
+    "projectList": [
+        {
+            "name": "Personal Portfolio Website: KawalDeol.ca",
+            "link": "",
+            "image": "",
+            "description_format": "list",
+            "description": [
+                "Configured GoDaddy DNS using a TXT record to authenticate Firebase as a hosting service",
+                "Assisted with the development of a module where merchants can view graphs based on their statistical data by date range, view their account information and create modification requests for their perks with the ability to upload design images to AWS",
+                "Currently developing website using Vue.js with Vuetify.js for styling"
+            ]
+        }
+    ]
+}

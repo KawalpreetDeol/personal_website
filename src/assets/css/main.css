@@ -1,0 +1,8 @@
+html, body, .app1 {
+    overflow: hidden;
+}
+
+.vertical_scrolling {
+    overflow-y: auto !important;
+    position: relative;
+}
